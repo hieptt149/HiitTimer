@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/layout_vertical_margin"
+    android:paddingLeft="@dimen/layout_horizontal_margin"
+    android:paddingRight="@dimen/layout_horizontal_margin">
+
+    <TextView
+        android:id="@+id/title_type_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warm up"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        style="@style/TextLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_name_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Warm up"
+            android:textColor="@color/colorTeal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Duration"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_action_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="0:00"
+            android:textColor="@color/colorTeal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_action_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/select_color"
+            android:gravity="end"
+            app:srcCompat="@drawable/draw_color_blue" />
+    </LinearLayout>
+</LinearLayout>

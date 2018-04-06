@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorItemRvSelectColor">#232323</color>
+    <color name="colorText">#90ffffff</color>
+    <color name="colorBlueLightDefaut">#00d8ff</color>
+    <color name="colorRed">#e60e0e</color>
+    <color name="colorOrange">#ffa800</color>
+    <color name="colorYellow">#f6ff00</color>
+    <color name="colorGreen">#4af217</color>
+    <color name="colorTeal">#17acf2</color>
+    <color name="colorBlue">#3d42ff</color>
+    <color name="colorPurple">#c208f1</color>
+    <color name="colorMagenta">#f108d3</color>
+    <color name="colorDeepPurple">#8e4284</color>
+    <color name="colorBackground">#2d2d2d</color>
+    <color name="colorBlack">#1a1919</color>
+    <color name="colorTextWhite">#d9ffffff</color>
+</resources>

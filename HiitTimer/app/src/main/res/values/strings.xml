@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My HiitTimer</string>
+    <string name="select_color">Select Color</string>
+    <string name="title_timer_detail">Timer Details</string>
+    <string name="title_name">Name</string>
+    <string name="number_of_set">Number Of Set</string>
+    <string name="action_save_timer">Save this timer</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="enter_in_here">Enter text in here</string>
+    <string name="title">Title</string>
+    <string name="warm_up">Warm up</string>
+    <string name="high_intensity_intervals">High Intensity Intervals</string>
+    <string name="low_intensity_intervals">Low Intensity Intervals</string>
+    <string name="cool_down">Cool Down</string>
+    <string name="duration">Duration</string>
+    <string name="color">Color</string>
+</resources>

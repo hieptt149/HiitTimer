@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/layout_show"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/logo_hiitimer" />
+
+            <TextView
+                android:id="@+id/home_txt_hiittimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Hiit Timer"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_create_new_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/draw_btn"
+                android:text="CREATE NEW TIMER"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_create_load_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/draw_btn"
+                android:text="LOAD TIMER"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_show"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorItemRvSelectColor"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_header"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/colorBackground"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/draw_menu_land">
+
+                <Button
+                    android:id="@+id/home_btn_menushow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_menu_isclick" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/linear_header"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
